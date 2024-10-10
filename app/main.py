@@ -19,7 +19,7 @@ models.Base.metadata.create_all(bind=engine)
 app = FastAPI()
 
 origins = [
-    "http://localhost:3000",  # React development server
+    "http://localhost:3000", "https://zchat-frontend.vercel.app" # React development server
 ]
 
 app.add_middleware(
